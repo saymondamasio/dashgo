@@ -16,8 +16,12 @@ const colors = {
 }
 
 export const theme = extendTheme({
+  colors,
+  fonts: {
+    heading: 'Roboto',
+    body: 'Roboto',
+  },
   styles: {
-    colors,
     global: {
       body: {
         backgroundColor: colors.gray['900'],
