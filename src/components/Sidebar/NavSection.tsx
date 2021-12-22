@@ -11,7 +11,7 @@ export function NavSection({ title, children }: Props) {
   return (
     <Box>
       <Text fontWeight="bold" color="gray.400" fontSize="small">
-        GERAL
+        {title}
       </Text>
       <Stack spacing="4" mt="8">
         {children}
