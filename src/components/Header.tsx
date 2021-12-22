@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react'
 
 import { RiNotificationLine, RiSearchLine, RiUserAddLine } from 'react-icons/ri'
+import { NotificationsNav } from './Header/NotificationsNav'
 import { Profile } from './Header/Profile'
 
 export function Header() {
@@ -60,18 +61,7 @@ export function Header() {
       </InputGroup>
 
       <Flex align="center" ml="auto">
-        <HStack
-          spacing="8"
-          mx="8"
-          pr="8"
-          py="1"
-          color="gray.300"
-          borderRightWidth={1}
-          borderColor="gray.700"
-        >
-          <Icon as={RiNotificationLine} fontSize="20" />
-          <Icon as={RiUserAddLine} fontSize="20" />
-        </HStack>
+        <NotificationsNav />
 
         <Profile />
       </Flex>
