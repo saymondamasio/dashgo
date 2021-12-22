@@ -71,7 +71,7 @@ export default function Dashboard() {
           minChildWidth={320}
           alignContent="flex-start"
         >
-          <Box p="8" bgColor="gray.800" borderRadius="8" pb="4">
+          <Box p={['6', '8']} bgColor="gray.800" borderRadius="8" pb="4">
             <Text>Inscritos da semana</Text>
 
             <Chart options={options} series={series} type="area" height={160} />
