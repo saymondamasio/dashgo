@@ -6,6 +6,7 @@ import {
   RiGitMergeLine,
   RiInputMethodLine,
 } from 'react-icons/ri'
+import { NavLink } from './NavLink'
 import { NavSection } from './NavSection'
 
 export function Sidebar() {
@@ -13,34 +14,14 @@ export function Sidebar() {
     <Box as="aside" w="64" mr="8">
       <Stack spacing="12" align="flex-start">
         <NavSection title="GERAL">
-          <Link display="flex" alignItems="center">
-            <Icon as={RiDashboardLine} fontSize={20} />
-            <Text ml="4" fontWeight="medium">
-              {title}
-            </Text>
-          </Link>
+          <NavLink icon={RiDashboardLine}>Dashboard</NavLink>
 
-          <Link display="flex" alignItems="center">
-            <Icon as={RiContactsLine} fontSize={20} />
-            <Text ml="4" fontWeight="medium">
-              Usuários
-            </Text>
-          </Link>
+          <NavLink icon={RiContactsLine}>Usuários</NavLink>
         </NavSection>
         <NavSection title="AUTOMAÇÃO">
-          <Link display="flex" alignItems="center">
-            <Icon as={RiInputMethodLine} fontSize={20} />
-            <Text ml="4" fontWeight="medium">
-              Formulários
-            </Text>
-          </Link>
+          <NavLink icon={RiInputMethodLine}>Formulários</NavLink>
 
-          <Link display="flex" alignItems="center">
-            <Icon as={RiGitMergeLine} fontSize={20} />
-            <Text ml="4" fontWeight="medium">
-              Automação
-            </Text>
-          </Link>
+          <NavLink icon={RiGitMergeLine}>Automação</NavLink>
         </NavSection>
       </Stack>
     </Box>
