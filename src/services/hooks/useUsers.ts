@@ -41,8 +41,16 @@ export async function getUsers(page: number): Promise<GetUsersResponse> {
   }
 }
 
-export function useUsers(page: number) {
+type UserUsersOptions = {
+  initialData: {
+    users: User[]
+    totalCount: number
+  }
+}
+
+export function useUsers(page: number, options?: UserUsersOptions) {
   return useQuery(['users', page], () => getUsers(page), {
     staleTime: 1000 * 60 * 10, // 10 minutes
+    ...options,
   })
 }
