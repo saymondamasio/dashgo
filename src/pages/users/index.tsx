@@ -22,6 +22,7 @@ import { useQuery } from 'react-query'
 import { Header } from '../../components/Header'
 import { Pagination } from '../../components/Pagination'
 import { Sidebar } from '../../components/Sidebar'
+import { api } from '../../services/api'
 
 type User = {
   id: string
@@ -30,12 +31,15 @@ type User = {
   createdAt: string
 }
 
+type ResponseUsers = {
+  users: User[]
+}
+
 export default function UsersList() {
   const { isLoading, isFetching, error, data } = useQuery<User[]>(
     'users',
     async () => {
-      const response = await fetch('http://localhost:3000/api/users')
-      const data: { users: User[] } = await response.json()
+      const { data } = await api.get<ResponseUsers>('/users')
 
       const users = data.users.map(user => ({
         ...user,
