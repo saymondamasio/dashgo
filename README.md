@@ -6,26 +6,26 @@
   Dashgo
 </h3>
 
-<p align="center">Um blog de notícias para o web</p>
+<p align="center">Um dashboard responsivo</p>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/saymondamasio/ignews">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/saymondamasio/dashgo">
 
-  <a href="https://www.linkedin.com/in/eliasgcf/">
+  <a href="https://www.linkedin.com/in/saymondamasio/">
     <img alt="Made by" src="https://img.shields.io/badge/Made%20by-Saymon%20Dam%C3%A1sio-brightgreen">
   </a>
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/saymondamasio/ignews">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/saymondamasio/dashgo">
 
-  <a href="https://github.com/saymondamasio/ignews/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/saymondamasio/ignews">
+  <a href="https://github.com/saymondamasio/dashgo/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/saymondamasio/dashgo">
   </a>
 
-  <a href="https://github.com/saymondamasio/ignews/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/saymondamasio/ignews">
+  <a href="https://github.com/saymondamasio/dashgo/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/saymondamasio/dashgo">
   </a>
 
-  <img alt="GitHub" src="https://img.shields.io/github/license/saymondamasio/ignews">
+  <img alt="GitHub" src="https://img.shields.io/github/license/saymondamasio/dashgo">
 </p>
 
 <p align="center">
@@ -38,7 +38,7 @@
 
 ## 👨🏻‍💻 About the project
 
-<p>Site de dashboard do mundo tech de forma simples e intuitiva. Neste projeto foi usado Next Auth para a autenticação do usuário com o GitHub, também a utilização do Fauna DB, um banco não relacional, além do Prismic CMS para a gestão do conteúdo.</p>
+<p>Site responsivo de dashboard com graficos e gerenciamentos de usuarios. Neste projeto foi usado Chakra UI criação rápida de componentes e React Query para sincronização de dados da API.</p>
 
 ## 🚀 Technologies
 
@@ -65,7 +65,7 @@ Technologies that I used to develop this web client
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/saymon/ignews.git && cd ignews
+$ git clone https://github.com/saymon/dashgo.git && cd dashgo
 ```
 
 **Follow the steps below**
@@ -86,14 +86,14 @@ $ yarn dev
 # Fork using GitHub official command line
 # If you don't have the GitHub CLI, use the web site to do that.
 
-$ gh repo fork saymondamasio/ignews
+$ gh repo fork saymondamasio/dashgo
 ```
 
 **Follow the steps below**
 
 ```bash
 # Clone your fork
-$ git clone your-fork-url && cd ignews
+$ git clone your-fork-url && cd dashgo
 
 # Create a branch with your feature
 $ git checkout -b my-feature
