@@ -17,7 +17,6 @@ import {
   Tr,
   useBreakpointValue,
 } from '@chakra-ui/react'
-import { GetServerSideProps } from 'next'
 import NextLink from 'next/link'
 import { useState } from 'react'
 import { RiAddLine, RiPencilLine } from 'react-icons/ri'
@@ -25,7 +24,7 @@ import { Header } from '../../components/Header'
 import { Pagination } from '../../components/Pagination'
 import { Sidebar } from '../../components/Sidebar'
 import { api } from '../../services/api'
-import { getUsers, useUsers } from '../../services/hooks/useUsers'
+import { useUsers } from '../../services/hooks/useUsers'
 import { queryClient } from '../../services/react-query'
 
 type User = {
@@ -40,14 +39,16 @@ interface Props {
   totalCount: number
 }
 
-export default function UsersList({ users, totalCount }: Props) {
+export default function UsersList() {
   const [page, setPage] = useState(1)
-  const { isLoading, isFetching, error, data } = useUsers(page, {
-    initialData: {
-      users,
-      totalCount,
-    },
-  })
+  // receber os dados iniciais do servidor Next
+  // const { isLoading, isFetching, error, data } = useUsers(page, {
+  //   initialData: {
+  //     users,
+  //     totalCount,
+  //   },
+  // })
+  const { isLoading, isFetching, error, data } = useUsers(page)
 
   const isWideVersion = useBreakpointValue({
     base: false,
@@ -184,13 +185,14 @@ export default function UsersList({ users, totalCount }: Props) {
   )
 }
 
-export const getServerSideProps: GetServerSideProps<Props> = async () => {
-  const { totalCount, users } = await getUsers(1)
+// O Mirage.js não suporta o getServerSideProps, só pelo lado do cliente
+// export const getServerSideProps: GetServerSideProps<Props> = async () => {
+//   const { totalCount, users } = await getUsers(1)
 
-  return {
-    props: {
-      totalCount,
-      users,
-    },
-  }
-}
+//   return {
+//     props: {
+//       totalCount,
+//       users,
+//     },
+//   }
+// }
