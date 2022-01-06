@@ -1,0 +1,88 @@
+{
+  "name": "Ignews",
+  "videos": [
+    "https://raw.githubusercontent.com/saymondamasio/ignews/master/.github/demonstration.mp4"
+  ],
+  "images": [
+    "https://raw.githubusercontent.com/saymondamasio/ignews/master/.github/screenshot-1.jpg",
+    "https://raw.githubusercontent.com/saymondamasio/ignews/master/.github/screenshot-2.jpg",
+    "https://raw.githubusercontent.com/saymondamasio/ignews/master/.github/screenshot-3.jpg",
+    "https://raw.githubusercontent.com/saymondamasio/ignews/master/.github/screenshot-4.jpg",
+    "https://raw.githubusercontent.com/saymondamasio/ignews/master/.github/screenshot-5.jpg",
+    "https://raw.githubusercontent.com/saymondamasio/ignews/master/.github/screenshot-6.jpg",
+    "https://raw.githubusercontent.com/saymondamasio/ignews/master/.github/screenshot-7.jpg",
+    "https://raw.githubusercontent.com/saymondamasio/ignews/master/.github/screenshot-8.jpg"
+  ],
+  "description": "Site de noticias do mundo tech de forma simples e intuitiva. Neste projeto foi usado Next Auth para a autenticação do usuário com o GitHub, também a utilização do Fauna DB, um banco não relacional, além do Prismic CMS para a gestão do conteúdo.",
+  "short_description": "Um blog de notícias para o web",
+  "link_preview": "https://ignews-damasio.vercel.app",
+  "techs": [
+    {
+      "name": "Next.js",
+      "url": "https://nextjs.org/"
+    },
+    {
+      "name": "Typescript",
+      "url": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "Chakra",
+      "url": "https://chakra-ui.com/"
+    },
+    {
+      "name": "Faker",
+      "url": "https://github.com/Marak/Faker.js"
+    },
+    {
+      "name": "Axios",
+      "url": "https://axios-http.com/"
+    },
+    {
+      "name": "Mirage.js",
+      "url": "https://www.miragejs.com/"
+    },
+    {
+      "name": "React Icons",
+      "url": "https://react-icons.netlify.com/"
+    },
+    {
+      "name": "Apexcharts.js",
+      "url": "https://apexcharts.com/"
+    },
+    {
+      "name": "Yup",
+      "url": "https://github.com/jquense/yup"
+    },
+    {
+      "name": "React Query",
+      "url": "https://react-query.tanstack.com/"
+    },
+    {
+      "name": "React Hook Form",
+      "url": "https://react-hook-form.com/"
+    },
+    {
+      "name": "Eslint",
+      "url": "https://eslint.org/"
+    },
+    {
+      "name": "Prettier",
+      "url": "https://prettier.io/"
+    },
+
+    {
+      "name": "Husky",
+      "url": "https://github.com/typicode/husky"
+    },
+
+    {
+      "name": "Commitlint",
+      "url": "https://github.com/conventional-changelog/commitlint"
+    },
+
+    {
+      "name": "Commitizen",
+      "url": "https://github.com/commitizen/cz-cli"
+    }
+  ]
+}
