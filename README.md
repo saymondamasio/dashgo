@@ -8,6 +8,8 @@
 
 <p align="center">Um dashboard responsivo</p>
 
+https://user-images.githubusercontent.com/50559834/152695700-4ee7368a-49ff-4295-b940-bd27a3a07c34.mp4
+
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/saymondamasio/dashgo">
 
